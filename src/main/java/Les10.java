@@ -3,9 +3,9 @@ import java.util.*;
 public class Les10 {
 
     public static void main(String[] args) {
-        ArrayList<String> listOfWords = new ArrayList<>();
-        Collections.addAll(listOfWords, "A", "B", "C", "C", "D", "E", "F", "G", "H", "I",
-                "J", "J", "K", "L", "L", "L", "D", "H");
+        String arrayOfWords[] = new String[]{"A", "B", "C", "C", "D", "E", "F", "G", "H", "I",
+                "J", "J", "K", "L", "L", "L", "D", "H"};
+        List<String> listOfWords = Arrays.asList(arrayOfWords);
         System.out.println("Начальный список слов: " + listOfWords);
 
         System.out.println("Список слов без повторений: " + new LinkedHashSet<>(listOfWords));
